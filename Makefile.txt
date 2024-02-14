@@ -1,0 +1,12 @@
+CFLAGS = -Wall -Wextra -pedantic -std=c++11
+
+ifeq ($(FL), 1)
+    FL_VAL = 1
+else
+    FL_VAL = 0
+endif
+
+all: result
+
+result: CMake_Parallelism_Dz_1.cpp
+	g++ $(CFLAGS) -D FL_VAL=$(FL_VAL) -o result CMake_Parallelism_Dz_1.cpp
