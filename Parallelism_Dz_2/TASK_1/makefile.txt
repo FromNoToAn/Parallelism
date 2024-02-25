@@ -1,0 +1,9 @@
+CC = gcc
+CFLAGS = -fopenmp
+
+all: program
+
+program: TASK_1.c
+	$(CC) TASK_1.c $(CFLAGS) -o program
+	./program
+	rm -f program
