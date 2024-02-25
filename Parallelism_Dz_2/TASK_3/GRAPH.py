@@ -7,8 +7,8 @@ with open('result.txt', 'r') as file:
 # Подготовка данных для построения графика
 
 ver_1 = [float(data[1]) / float(data[i]) for i in range(1, 81)]
+ver_2 = [float(data[82]) / float(data[i]) for i in range(82, 162)]
 # print(ver_1)
-ver_2 = [float(data[81]) / float(data[i]) for i in range(82, 162)]
 # print(ver_2)
 threads = [i for i in range (1, 81)]
 

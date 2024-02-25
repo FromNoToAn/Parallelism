@@ -1,0 +1,9 @@
+CC = g++
+CFLAGS = -fopenmp
+
+all: program
+
+program: TASK_3.cpp
+	$(CC) TASK_3.cpp $(CFLAGS) -o program
+	./program
+	rm -f program
